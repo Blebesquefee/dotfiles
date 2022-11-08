@@ -1,0 +1,92 @@
+set nocompatible
+filetype on
+filetype plugin on
+filetype indent on
+syntax on
+
+set number
+set relativenumber
+set cursorline
+set textwidth=80
+set wrap
+set autoindent
+
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set nobackup
+
+set scrolloff=10
+set colorcolumn=80
+
+set incsearch
+set ignorecase
+set smartcase
+set showcmd
+set showmode
+set showmatch
+set hlsearch
+
+set history=1000
+set wildmenu
+set wildmode=list:longest
+
+set laststatus=2
+set list listchars=tab:>-,eol:¬
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'dense-analysis/ale'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'joshdick/onedark.vim'
+Plug 'preservim/nerdtree'
+Plug 'preservim/tagbar'
+Plug 'rhysd/vim-clang-format'
+Plug 'easymotion/vim-easymotion'
+
+call plug#end()
+
+nmap <silent> <e-n> <Plug>(ale_previous_wrap)
+nmap <silent> <e-S-n> <Plug>(ale_next_wrap)
+nmap s <Plug>(easymotion-overwin-f2)
+
+inoremap ii <esc>
+
+nnoremap <space> :
+nnoremap o o<esc>
+nnoremap O O<esc>
+nnoremap <silent> <C-t> :TagbarToggle <CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
+
+autocmd FileType c,h ClangFormatAutoEnable
+
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+augroup cursor_off
+    autocmd!
+    autocmd WinLeave * set nocursorline
+    autocmd WinEnter * set cursorline
+augroup END
+
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s'
+
+let g:airline_powerline_fonts = 0
+let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_section_z = airline#section#create(['%l:%v (%p%%)' ])
+
+let g:ycm_key_list_select_completion = ['<TAB>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>']
+
+let g:tagbar_show_tag_linenumbers = 2
+
+syntax on
+colorscheme onedark

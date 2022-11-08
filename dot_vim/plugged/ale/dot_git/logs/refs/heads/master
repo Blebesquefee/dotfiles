@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 78942df284a4a00c59a6edcc187684cdbc333fb9 thr_gst <thr_gst@alarm.(none)> 1664363519 +0200	clone: from https://github.com/dense-analysis/ale.git
+78942df284a4a00c59a6edcc187684cdbc333fb9 e4b20544082ba019d8095cbc24ffab43b15e8fc0 arthur.gosset <arthur.gosset@epita.fr> 1665736351 +0200	merge origin/master: Fast-forward
+e4b20544082ba019d8095cbc24ffab43b15e8fc0 edffffac2570cf837badf4195fb3d55ae439af7d arthur.gosset <arthur.gosset@epita.fr> 1667818272 +0100	merge origin/master: Fast-forward
+edffffac2570cf837badf4195fb3d55ae439af7d 4b433e5693ccec8e408504c4b139b8f7cc6a4aa3 arthur.gosset <arthur.gosset@epita.fr> 1667827301 +0100	merge origin/master: Fast-forward
