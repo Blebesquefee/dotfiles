@@ -184,13 +184,13 @@ bindsym $mod+r mode "resize"
 exec_always bash /home/thr_gst/.config/polybar/launch.sh --cuts
 
 # Wallpaper
-# exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/travis.jpg
-exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gradient.jpg
+exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/travis.jpg
+# exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gradient.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gender_solution.jpg
 
 
 # Betterlock Screen
-exec --no-startup-id betterlockscreen -u "/home/thr_gst/Pictures/wallpapers/gradient.jpg"
+exec --no-startup-id betterlockscreen -u "/home/thr_gst/Pictures/wallpapers/travis.jpg"
 bindsym $mod+Shift+q exec betterlockscreen -l --blur
 
 #i3 Gaps

@@ -1,5 +1,5 @@
 # Dotfiles Repository
-This repository is used to store all my configurations files using chezmoi
+This repository is used to store all my configurations files using [chezmoi](https://www.chezmoi.io/)
 program.
 
 ## This config's repository contains :
