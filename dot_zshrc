@@ -4,7 +4,8 @@ fi
 
 # OH-MY-ZSH
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# Uncomment if you want to use p10k (currently using starship)
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Plugins
@@ -59,4 +60,7 @@ alias gcc-crit="gcc -Wextra -Wall -Werror -Wvla -std=c99 -lcriterion -g"
 alias cf="find . -iname *.c -o -iname *.h | xargs clang-format --dry-run"
 alias cfa="find . -iname *.c -o -iname *.h | xargs clang-format -i --verbose"
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Uncomment if you want to use p10k (currently using starship)
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"

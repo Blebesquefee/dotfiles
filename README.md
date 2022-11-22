@@ -9,6 +9,7 @@ program.
     [zsh](https://github.com/z-shell)
     [omz](https://github.com/ohmyzsh/ohmyzsh)
     [p10k](https://github.com/romkatv/powerlevel10k)
+    [starship](https://starship.rs/)
 - **Lock Screen** : [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
 - **Fancy Config** :
     [neofetch](https://github.com/dylanaraps/neofetch)
