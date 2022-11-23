@@ -7,17 +7,17 @@ program.
 - **Terminal** : [terminator](https://github.com/gnome-terminator/terminator) 
 - **Shell** :
     [zsh](https://github.com/z-shell)
-    [omz](https://github.com/ohmyzsh/ohmyzsh)
-    [p10k](https://github.com/romkatv/powerlevel10k)
-    [starship](https://starship.rs/)
+/    [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+/    [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+/    [starship](https://starship.rs/)
 - **Lock Screen** : [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
 - **Fancy Config** :
     [neofetch](https://github.com/dylanaraps/neofetch)
-    [picom](https://github.com/dylanaraps/neofetch)
-    [polybar](https://github.com/adi1090x/polybar-themes)
-    [rofi](https://github.com/adi1090x/rofi)
+/    [picom](https://github.com/dylanaraps/neofetch)
+/    [polybar](https://github.com/adi1090x/polybar-themes)
+/    [rofi](https://github.com/adi1090x/rofi)
 - **Text Editor** : [vim](https://github.com/vim/vim)
 - Other configuration's scripts
 
 ## Not included in this repository:
-- **Login Mananger** : [sddm](https://github.com/sddm/sddm)
+- **Login Manager** : [sddm](https://github.com/sddm/sddm)
