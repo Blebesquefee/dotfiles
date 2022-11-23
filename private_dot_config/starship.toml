@@ -1,5 +1,4 @@
-format = "$all"
-right_format = "$battery"
+format = "$all$fill $status$cmd_duration$battery$line_break$character"
 
 [username]
 style_user = "blue bold"
@@ -10,7 +9,7 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = '\[[$hostname](purple bold)\] '
+format = '\[[$hostname](white bold)\] '
 trim_at = "."
 disabled = false
 
@@ -18,13 +17,15 @@ disabled = false
 success_symbol = "[➜](bold green)"
 error_symbol = "[✗](bold red)"
 
-# configure directory
+[status]
+disabled = false
+map_symbol = false
+
 [directory]
 read_only = " "
 truncation_length = 10
-# truncates directory to root folder if in github repo
 truncate_to_repo = true
-style = "bold italic green"
+style = "italic purple"
 
 [battery]
 full_symbol = " "
@@ -48,7 +49,8 @@ style = "green bold"
 min_time = 4
 show_milliseconds = false
 disabled = false
-style = "bold italic red"
+style = "bold italic blue"
+
 
 [aws]
 symbol = "  "
@@ -75,7 +77,24 @@ symbol = " "
 symbol = " "
 
 [git_branch]
-symbol = " "
+format = "on [$symbol$branch(:$remote_branch)]($style) "
+style = "italic cyan"
+symbol = ""
+
+[git_commit]
+tag_disabled = false
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]](white) )'
+up_to_date = '✔' 
+ahead = '↑'
+behind  = '↓'
+diverged = '↕'
+modified = '!'
+deleted= '✘'
+conflicted = '⌁'
+untracked = '?'
+staged = '+'
 
 [golang]
 symbol = " "
@@ -109,7 +128,6 @@ symbol = " "
 
 [python]
 symbol = " "
-#pyenv_version_name = true
 format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
 style = "bold yellow"
 pyenv_prefix = "venv "
