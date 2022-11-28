@@ -32,7 +32,6 @@ export PAGER="most"
 # Aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
-alias codi="code-insiders"
 alias valgrind="~/.config/scripts/valgrind-color.sh --leak-check=full"
 
 alias bat="bat --paging=never"
@@ -54,8 +53,8 @@ alias gt="git tag"
 alias gl="git log"
 
 alias gcc="gcc -Wextra -Wall -Werror -Wvla -std=c99 -g"
-alias gcc-ped="gcc -Wextra -Wall -Werror -Wvla -std=c99 -pedantic -g"
-alias gcc-crit="gcc -Wextra -Wall -Werror -Wvla -std=c99 -lcriterion -g"
+alias gcc-ped="gcc -Wextra -Wall -Werror -Wvla -std=c99 -g -pedantic"
+alias gcc-crit="gcc -Wextra -Wall -Werror -Wvla -std=c99 -g -lcriterion"
 
 alias cf="find . -iname *.c -o -iname *.h | xargs clang-format --dry-run"
 alias cfa="find . -iname *.c -o -iname *.h | xargs clang-format -i --verbose"
