@@ -12,7 +12,8 @@ program.
 /    [starship](https://starship.rs/)
 - **Lock Screen** : [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
 - **Fancy Config** :
-    [neofetch](https://github.com/dylanaraps/neofetch)
+    [dwall](https://github.com/adi1090x/dynamic-wallpaper)
+/    [neofetch](https://github.com/dylanaraps/neofetch)
 /    [picom](https://github.com/dylanaraps/neofetch)
 /    [polybar](https://github.com/adi1090x/polybar-themes)
 /    [rofi](https://github.com/adi1090x/rofi)
@@ -21,4 +22,3 @@ program.
 
 ## Not included in this repository:
 - **Login Manager** : [sddm](https://github.com/sddm/sddm)
-- **Dwall** : [dwall](https://github.com/adi1090x/dynamic-wallpaper)

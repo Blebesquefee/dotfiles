@@ -188,11 +188,10 @@ exec dwall -s beach
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/bansky_art.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/travis.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gradient.jpg
-# exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gender_solution.jpg
-
 
 # Betterlock Screen
-exec --no-startup-id betterlockscreen -u "/home/thr_gst/Pictures/wallpapers/bansky_art.jpg"
+# Done by dwall while loading a new wallpaper
+# exec --no-startup-id betterlockscreen -u $HOME/Pictures/wallpapers/bansky_art.jpg
 bindsym $mod+Shift+q exec betterlockscreen -l --blur
 
 #i3 Gaps
