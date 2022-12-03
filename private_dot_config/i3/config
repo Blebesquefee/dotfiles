@@ -184,7 +184,8 @@ bindsym $mod+r mode "resize"
 exec_always bash /home/thr_gst/.config/polybar/launch.sh --cuts
 
 # Wallpaper
-exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/bansky_art.jpg
+exec dwall -s beach
+# exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/bansky_art.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/travis.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gradient.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gender_solution.jpg

@@ -21,3 +21,4 @@ program.
 
 ## Not included in this repository:
 - **Login Manager** : [sddm](https://github.com/sddm/sddm)
+- **Dwall** : [dwall](https://github.com/adi1090x/dynamic-wallpaper)
