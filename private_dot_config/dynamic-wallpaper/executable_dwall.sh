@@ -176,7 +176,7 @@ set_wallpaper() {
 		touch "$cfile"
 		echo "$image.$FORMAT" > "$cfile"
 	else
-		echo "$image.$FORMAT" > "$cfile"	
+		echo "$image.$FORMAT" > "$cfile"
 	fi
 }
 
@@ -208,7 +208,7 @@ main() {
 		{ pywal_set "$num"; reset_color; exit 0; }
 	else
 		{ set_wallpaper "$num"; reset_color; exit 0; }
-        exec $HOME/.config/scripts/load_betterlockscreen.sh
+        source $HOME/.config/scripts/load_betterlockscreen.sh
 	fi
 }
 
