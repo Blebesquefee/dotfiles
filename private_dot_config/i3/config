@@ -192,6 +192,7 @@ exec dwall -s beach
 # Betterlock Screen
 # Done by dwall while loading a new wallpaper
 # exec --no-startup-id betterlockscreen -u $HOME/Pictures/wallpapers/bansky_art.jpg
+exec $HOME/.config/scripts/load_betterlockscreen.sh
 bindsym $mod+Shift+q exec betterlockscreen -l --blur
 
 #i3 Gaps
