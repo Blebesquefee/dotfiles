@@ -206,9 +206,10 @@ main() {
 	# set wallpaper accordingly
 	if [[ -n "$PYWAL" ]]; then
 		{ pywal_set "$num"; reset_color; exit 0; }
+        exec bash /home/thr_gst/.config/scripts/load_betterlockscreen.sh
 	else
 		{ set_wallpaper "$num"; reset_color; exit 0; }
-        source $HOME/.config/scripts/load_betterlockscreen.sh
+        exec bash /home/thr_gst/.config/scripts/load_betterlockscreen.sh
 	fi
 }
 
