@@ -185,6 +185,7 @@ exec_always bash $HOME/.config/polybar/launch.sh --cuts
 
 # Wallpaper
 # Currently set and sync by systemd services in .config/systemd/user folder
+exec dwall -s beach
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/bansky_art.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/travis.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gradient.jpg
