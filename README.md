@@ -12,11 +12,11 @@ program for my [Asahi Linux](https://asahilinux.org/) system.
 /    [starship](https://starship.rs/)
 - **Lock Screen** : [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
 - **Fancy Config** :
-    [dwall](https://github.com/adi1090x/dynamic-wallpaper)
-/    [neofetch](https://github.com/dylanaraps/neofetch)
+    [neofetch](https://github.com/dylanaraps/neofetch)
 /    [picom](https://github.com/dylanaraps/neofetch)
 /    [polybar](https://github.com/adi1090x/polybar-themes)
 /    [rofi](https://github.com/adi1090x/rofi)
+/    [dwall](https://github.com/adi1090x/dynamic-wallpaper)
 - **Text Editor** : [vim](https://github.com/vim/vim)
 - Other configuration's scripts
 

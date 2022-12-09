@@ -57,7 +57,7 @@ bindsym $mod+q kill
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec /home/thr_gst/.config/rofi/launchers/type-1/launcher.sh
+bindsym $mod+d exec $HOME/.config/rofi/launchers/type-1/launcher.sh
 
 # change focus
 bindsym $mod+j focus left
@@ -181,16 +181,15 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Lunch polybar
-exec_always bash /home/thr_gst/.config/polybar/launch.sh --cuts
+exec_always bash $HOME/.config/polybar/launch.sh --cuts
 
 # Wallpaper
-exec dwall -s beach
+# Currently set and sync by systemd services in .config/systemd/user folder
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/bansky_art.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/travis.jpg
 # exec_always feh --bg-fill /home/thr_gst/Pictures/wallpapers/gradient.jpg
 
 # Betterlock Screen
-# Done by dwall while loading a new wallpaper
 # exec --no-startup-id betterlockscreen -u $HOME/Pictures/wallpapers/bansky_art.jpg
 bindsym $mod+Shift+q exec betterlockscreen -l --blur
 
@@ -201,4 +200,4 @@ smart_borders on
 new_window pixel
 
 # Window Compositor [picom]
-exec_always picom -f --config /home/thr_gst/.config/picom/picom.conf --no-fading-openclose --fade-in-step=1 --fade-out-step=1 --fade-delta=0
+exec_always picom -f --config $HOME/.config/picom/picom.conf --no-fading-openclose --fade-in-step=1 --fade-out-step=1 --fade-delta=0

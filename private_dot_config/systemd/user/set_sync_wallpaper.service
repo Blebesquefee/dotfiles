@@ -1,0 +1,10 @@
+[Unit]
+Description=Sync betterlockscreen background with dwall wallpaper
+
+[Service]
+Type=oneshot
+ExecStart=dwall -s beach
+ExecStart=/bin/bash ~/.config/scripts/load_betterlockscreen.sh
+
+[Install]
+WantedBy=graphical-session.target
