@@ -1,6 +1,6 @@
 # Dotfiles Repository
 This repository is used to store all my configurations files using [chezmoi](https://www.chezmoi.io/)
-program for my [Asahi Linux] (https://asahilinux.org/) system.
+program for my [Asahi Linux](https://asahilinux.org/) system.
 
 ## This config's repository contains :
 - **Window Manager** : [i3](https://github.com/i3/i3)
