@@ -1,4 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/thr_gst/Documents/epita/s5/Piscine-C/tinylibstream/src'
+let g:netrw_dirhist_6='/home/thr_gst/.config/terminator'
+let g:netrw_dirhist_5='/home/thr_gst/.config/systemd/user/graphical.target.wants'
+let g:netrw_dirhist_4='/home/thr_gst/Documents/epita/s5/Piscine-SQL/.git'
+let g:netrw_dirhist_3='/home/thr_gst/Documents/code/aides/tp3_marion'
 let g:netrw_dirhist_2='/home/thr_gst/.fzf/plugin'
 let g:netrw_dirhist_1='/home/thr_gst/.fzf'

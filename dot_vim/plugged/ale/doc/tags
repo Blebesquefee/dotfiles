@@ -652,6 +652,7 @@ ale-special-thanks	ale.txt	/*ale-special-thanks*
 ale-sql-dprint	ale-sql.txt	/*ale-sql-dprint*
 ale-sql-options	ale-sql.txt	/*ale-sql-options*
 ale-sql-pgformatter	ale-sql.txt	/*ale-sql-pgformatter*
+ale-sql-sqlfluff	ale-sql.txt	/*ale-sql-sqlfluff*
 ale-sql-sqlfmt	ale-sql.txt	/*ale-sql-sqlfmt*
 ale-sql-sqlformat	ale-sql.txt	/*ale-sql-sqlformat*
 ale-stylus-options	ale-stylus.txt	/*ale-stylus-options*
@@ -1146,6 +1147,7 @@ b:ale_lua_selene_options	ale-lua.txt	/*b:ale_lua_selene_options*
 b:ale_lua_stylua_executable	ale-lua.txt	/*b:ale_lua_stylua_executable*
 b:ale_lua_stylua_options	ale-lua.txt	/*b:ale_lua_stylua_options*
 b:ale_make_checkmake_config	ale-make.txt	/*b:ale_make_checkmake_config*
+b:ale_markdown_markdownlint_executable	ale-markdown.txt	/*b:ale_markdown_markdownlint_executable*
 b:ale_markdown_markdownlint_options	ale-markdown.txt	/*b:ale_markdown_markdownlint_options*
 b:ale_markdown_mdl_executable	ale-markdown.txt	/*b:ale_markdown_mdl_executable*
 b:ale_markdown_mdl_options	ale-markdown.txt	/*b:ale_markdown_mdl_options*
@@ -1438,6 +1440,7 @@ b:ale_rust_rls_config	ale-rust.txt	/*b:ale_rust_rls_config*
 b:ale_rust_rls_executable	ale-rust.txt	/*b:ale_rust_rls_executable*
 b:ale_rust_rls_toolchain	ale-rust.txt	/*b:ale_rust_rls_toolchain*
 b:ale_rust_rustc_options	ale-rust.txt	/*b:ale_rust_rustc_options*
+b:ale_rust_rustfmt_executable	ale-rust.txt	/*b:ale_rust_rustfmt_executable*
 b:ale_rust_rustfmt_options	ale-rust.txt	/*b:ale_rust_rustfmt_options*
 b:ale_sass_stylelint_executable	ale-sass.txt	/*b:ale_sass_stylelint_executable*
 b:ale_sass_stylelint_use_global	ale-sass.txt	/*b:ale_sass_stylelint_use_global*
@@ -1478,6 +1481,8 @@ b:ale_spec_rpmlint_executable	ale-spec.txt	/*b:ale_spec_rpmlint_executable*
 b:ale_spec_rpmlint_options	ale-spec.txt	/*b:ale_spec_rpmlint_options*
 b:ale_sql_pgformatter_executable	ale-sql.txt	/*b:ale_sql_pgformatter_executable*
 b:ale_sql_pgformatter_options	ale-sql.txt	/*b:ale_sql_pgformatter_options*
+b:ale_sql_sqlfluff_executable	ale-sql.txt	/*b:ale_sql_sqlfluff_executable*
+b:ale_sql_sqlfluff_options	ale-sql.txt	/*b:ale_sql_sqlfluff_options*
 b:ale_sql_sqlfmt_executable	ale-sql.txt	/*b:ale_sql_sqlfmt_executable*
 b:ale_sql_sqlfmt_options	ale-sql.txt	/*b:ale_sql_sqlfmt_options*
 b:ale_sql_sqlformat_executable	ale-sql.txt	/*b:ale_sql_sqlformat_executable*
@@ -2029,6 +2034,7 @@ g:ale_lua_selene_options	ale-lua.txt	/*g:ale_lua_selene_options*
 g:ale_lua_stylua_executable	ale-lua.txt	/*g:ale_lua_stylua_executable*
 g:ale_lua_stylua_options	ale-lua.txt	/*g:ale_lua_stylua_options*
 g:ale_make_checkmake_config	ale-make.txt	/*g:ale_make_checkmake_config*
+g:ale_markdown_markdownlint_executable	ale-markdown.txt	/*g:ale_markdown_markdownlint_executable*
 g:ale_markdown_markdownlint_options	ale-markdown.txt	/*g:ale_markdown_markdownlint_options*
 g:ale_markdown_mdl_executable	ale-markdown.txt	/*g:ale_markdown_mdl_executable*
 g:ale_markdown_mdl_options	ale-markdown.txt	/*g:ale_markdown_mdl_options*
@@ -2333,6 +2339,7 @@ g:ale_rust_rls_config	ale-rust.txt	/*g:ale_rust_rls_config*
 g:ale_rust_rls_executable	ale-rust.txt	/*g:ale_rust_rls_executable*
 g:ale_rust_rls_toolchain	ale-rust.txt	/*g:ale_rust_rls_toolchain*
 g:ale_rust_rustc_options	ale-rust.txt	/*g:ale_rust_rustc_options*
+g:ale_rust_rustfmt_executable	ale-rust.txt	/*g:ale_rust_rustfmt_executable*
 g:ale_rust_rustfmt_options	ale-rust.txt	/*g:ale_rust_rustfmt_options*
 g:ale_sass_stylelint_executable	ale-sass.txt	/*g:ale_sass_stylelint_executable*
 g:ale_sass_stylelint_use_global	ale-sass.txt	/*g:ale_sass_stylelint_use_global*
@@ -2386,6 +2393,8 @@ g:ale_spec_rpmlint_executable	ale-spec.txt	/*g:ale_spec_rpmlint_executable*
 g:ale_spec_rpmlint_options	ale-spec.txt	/*g:ale_spec_rpmlint_options*
 g:ale_sql_pgformatter_executable	ale-sql.txt	/*g:ale_sql_pgformatter_executable*
 g:ale_sql_pgformatter_options	ale-sql.txt	/*g:ale_sql_pgformatter_options*
+g:ale_sql_sqlfluff_executable	ale-sql.txt	/*g:ale_sql_sqlfluff_executable*
+g:ale_sql_sqlfluff_options	ale-sql.txt	/*g:ale_sql_sqlfluff_options*
 g:ale_sql_sqlfmt_executable	ale-sql.txt	/*g:ale_sql_sqlfmt_executable*
 g:ale_sql_sqlfmt_options	ale-sql.txt	/*g:ale_sql_sqlfmt_options*
 g:ale_sql_sqlformat_executable	ale-sql.txt	/*g:ale_sql_sqlformat_executable*

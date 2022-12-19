@@ -59,6 +59,8 @@ alias gcc-crit="gcc -Wextra -Wall -Werror -Wvla -std=c99 -g -lcriterion"
 alias cf="find . -iname *.c -o -iname *.h | xargs clang-format --dry-run"
 alias cfa="find . -iname *.c -o -iname *.h | xargs clang-format -i --verbose"
 
+function mcdir () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+
 # Uncomment if you want to use p10k (currently using starship)
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
