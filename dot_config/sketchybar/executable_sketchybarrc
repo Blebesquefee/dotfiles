@@ -1,0 +1,81 @@
+#! /bin/sh
+
+PLUGINS_DIR="$CONFIG_DIR/plugins"          # Plugins configuration directory
+
+FONT="SF Pro"
+PADDINGS=5                                  # Default padding
+
+source "$CONFIG_DIR/colors.sh"              # Loads all defined colors
+source "$CONFIG_DIR/icons.sh"               # Loads all defined icons
+
+
+# Default
+bar_defaults=(
+    height=35
+    border_width=2
+    corner_radius=25
+    color=$BAR_COLOR
+    padding_left=$PADDINGS
+    padding_right=$PADDINGS
+    border_color=$BAR_BORDER_COLOR
+    sticky=on
+)
+sketchybar --bar "${bar_defaults[@]}"
+
+icon_defaults=(
+    icon.color=$ICON_COLOR
+    icon.font="$FONT:Bold:14.0"
+    icon.padding_left=$PADDINGS
+    icon.padding_right=$PADDINGS
+)
+sketchybar --default "${icon_defaults[@]}"
+
+label_defaults=(
+    label.color=$LABEL_COLOR
+    label.font="$FONT:Semibold:12.0"
+    label.padding_left=$PADDINGS
+    label.padding_right=$PADDINGS
+)
+sketchybar --default "${label_defaults[@]}"
+
+background_defaults=(
+    background.height=25
+    background.border_width=2
+    background.corner_radius=8
+    background.padding_left=$PADDINGS
+    background.padding_right=$PADDINGS
+)
+sketchybar --default "${background_defaults[@]}"
+
+popup_defaults=(
+    popup.align=center
+    popup.background.color=$BAR_COLOR
+    popup.background.border_color=$BAR_BORDER_COLOR
+    popup.background.border_width=2
+    popup.background.corner_radius=8
+)
+sketchybar --default "${popup_defaults[@]}"
+
+settings_defaults=(
+    updates=when_shown
+)
+sketchybar --default "${settings_defaults[@]}"
+
+# Items launch
+# Left
+source "$PLUGINS_DIR/apple/item.sh"
+source "$PLUGINS_DIR/spaces/item.sh"
+source "$PLUGINS_DIR/apps/item.sh"
+
+# Center
+
+
+# Right
+source "$PLUGINS_DIR/date/item.sh"
+source "$PLUGINS_DIR/sys-center/item.sh"
+source "$PLUGINS_DIR/stats/item.sh"
+
+# Forcing all item scripts to run (never do outside sketchybarrc)
+sketchybar --update
+
+echo "sketchybar configuration loaded..."

@@ -1,0 +1,140 @@
+# Use https://glyphsearch.com/ for icons
+
+format = "$all$fill $status$cmd_duration$battery$line_break$character"
+
+[username]
+style_user = "blue bold"
+style_root = "red bold"
+format = "  [$user]($style) "
+show_always = true
+disabled = false
+
+[hostname]
+ssh_only = false
+format = '\[[$ssh_symbol$hostname](white)\] '
+trim_at = "."
+disabled = false
+
+[character]
+success_symbol = "[➜](green)"
+error_symbol = "[➜](red)"
+disabled = false
+
+[status]
+symbol = "[✗$status](red)"
+success_symbol = "[✔ $status](green)"
+not_executable_symbol = "[$status](purple)"
+not_found_symbol = "[$status](grey)"
+sigint_symbol = "[󰞁$status](blue)" 
+signal_symbol = "[⚡$status](yellow)"
+format = "[$symbol]($style) "
+disabled = false
+
+[directory]
+read_only = " "
+truncation_length = 10
+truncate_to_repo = true
+style = "italic purple"
+disabled = false
+
+[cmd_duration]
+min_time = 100
+show_milliseconds = false
+min_time_to_notify = 60000
+show_notifications = true
+style = "bold italic blue"
+disabled = false
+
+[git_branch]
+style = "italic cyan"
+disabled = false
+
+[git_commit]
+style = "purple"
+tag_disabled = false
+disabled = false
+
+[git_state]
+style = "yellow"
+format = '[$state( $progress_current/$progress_total)]($style) '
+disabled = false
+
+[git_metrics]
+added_style = "green"
+deleted_style = "red"
+format = '\[[+$added]($added_style)/[-$deleted]($deleted_style)\] '
+disabled = false
+
+[git_status]
+style = "bold white"
+conflicted = "[💥$count ](purple)"
+diverged = "[⚡$count ](cyan)"
+staged = "[$count ](green)"
+modified = "[$count ](yellow)"
+deleted =  "[✗$count ](red)"
+untracked = "[$count ](grey)"
+up_to_date = "[✔](green)"
+disabled = false
+
+[battery]
+disabled = false
+
+[[battery.display]]
+threshold = 10
+charging_symbol = "[󰢜 ](red)"
+discharging_symbol = "[󰁺 ](red)"
+style = "black bold"
+
+[[battery.display]]
+threshold = 20
+charging_symbol = "[󰂆 ](red)"
+discharging_symbol = "[󰁻 ](red)"
+style = "red bold"
+
+[[battery.display]]
+threshold = 30
+charging_symbol = "[󰂇 ](yellow)"
+discharging_symbol = "[󰁼 ](yellow)"
+style = "red bold"
+
+[[battery.display]]
+threshold = 40
+charging_symbol = "[󰂈 ](yellow)"
+discharging_symbol = "[󰁽 ](yellow)"
+style = "yellow bold"
+
+[[battery.display]]
+threshold = 50
+charging_symbol = "[󰢝 ](yellow)"
+discharging_symbol = "[󰁾 ](yellow)"
+style = "yellow bold"
+
+[[battery.display]]
+threshold = 60
+charging_symbol = "[󰂉 ](yellow)"
+discharging_symbol = "[󰁿 ](yellow)"
+style = "yellow bold"
+
+[[battery.display]]
+threshold = 70
+charging_symbol = "[󰢞 ](green)"
+discharging_symbol = "[󰂀 ](green)"
+style = "green bold"
+
+[[battery.display]]
+threshold = 80
+charging_symbol = "[󰂊 ](green)"
+discharging_symbol = "[󰂁 ](green)"
+style = "green bold"
+
+[[battery.display]]
+threshold = 90
+charging_symbol = "[󰂋 ](green)"
+discharging_symbol = "[󰂂 ](green)"
+style = "green bold"
+
+[[battery.display]]
+threshold = 100
+charging_symbol = "[󰂅 ](green)"
+discharging_symbol = "[󰁹 ](green)"
+style = "green bold"

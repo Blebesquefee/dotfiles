@@ -1,0 +1,106 @@
+####################################################
+#####                 OH-MY-ZSH                 ####
+####################################################
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled    # disable automatic updates
+# zstyle ':omz:update' mode auto        # update automatically without asking
+zstyle ':omz:update' mode reminder      # just remind me to update when it's time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle ':omz:update' frequency 13
+
+####################################################
+#####                 PLUGINS                   ####
+####################################################
+
+# Which plugins would you like to load?
+plugins=(
+    git
+    sudo
+    colored-man-pages
+    web-search
+    ssh-agent
+    )
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH/oh-my-zsh.sh
+
+####################################################
+#####                FUNCTIONS                  ####
+####################################################
+
+function brew() {
+    command brew "$@" 
+
+    if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
+        sketchybar --trigger brew_update
+    fi
+}
+
+function secret() {
+  output="${HOME}/$(basename ${1}).$(date +%F).enc"
+  gpg --encrypt --armor \
+    --output ${output} \
+    -r 0x8163E2C0DAEC4680 \
+    "${1}" && echo "${1} -> ${output}" 
+}
+
+function reveal() {
+    output=$(echo "${1}" | rev | cut -c16- | rev)
+    gpg --decrypt --output ${output} "${1}" && echo "${1} -> ${output}"
+}
+
+####################################################
+#####                 ALIASES                   ####
+####################################################
+
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias valgrind="~/.config/scripts/valgrind-color.sh --leak-check=full"
+
+alias bat="bat --paging=never"
+alias ip="ip -color=auto"
+alias vi="nvim"
+
+alias cl="clear"
+alias sl="ls"
+alias ls="exa --colour always --group-directories-first"
+alias la="exa --colour always --group-directories-first --all"
+alias ll="exa --colour always --group-directories-first --all --long --header --git"
+alias lt="exa --colour always --group-directories-first --tree"
+
+alias gs="git status"
+alias ga="git add"
+alias gcm="git commit -S -m"
+alias gp="git push"
+alias gpft="git push --follow-tags"
+alias gt="git tag"
+alias gl="git log"
+
+alias ghidra="/opt/homebrew/Caskroom/ghidra/10.3.3-20230829/ghidra_10.3.3_PUBLIC/ghidraRun"
+
+####################################################
+#####                  OTHER                    ####
+####################################################
+
+neofetch
+
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+
+eval "$(starship init zsh)"
+
+####################################################
+#####                   GPG                     ####
+####################################################
+
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
