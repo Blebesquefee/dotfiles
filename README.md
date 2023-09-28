@@ -17,5 +17,5 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Blebesquefee
 - Terminal: [iterm2](https://iterm2.com/)
 - Shell: [zsh](https://github.com/zsh-users/zsh)
 - MacOS modificator: [yabai](https://github.com/koekeishiya/yabai), [skhd](https://github.com/koekeishiya/skhd), [sketchybar](https://github.com/FelixKratz/SketchyBar)
-- Code Editor: [nvim](https://neovim.io/)
+- Code Editor: [nvim](https://neovim.io/) (unstable version)
 - Fancy: [neofetch](https://github.com/dylanaraps/neofetch), [starship](https://starship.rs/)
