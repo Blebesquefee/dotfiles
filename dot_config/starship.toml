@@ -95,7 +95,7 @@ style = "red bold"
 threshold = 30
 charging_symbol = "[󰂇 ](yellow)"
 discharging_symbol = "[󰁼 ](yellow)"
-style = "red bold"
+style = "yellow bold"
 
 [[battery.display]]
 threshold = 40
