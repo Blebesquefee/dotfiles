@@ -2,7 +2,7 @@
 
 source "$CONFIG_DIR/colors.sh"
 
-STATE=$(blueutil --is-connect 28-11-a5-77-8a-80)
+STATE=$(blueutil --is-connect "$1")
 COLOR="$GREY"
 LABEL=""
 
@@ -11,7 +11,7 @@ if [ "$STATE" = "0" ]; then
     LABEL="N/A"
 else
     COLOR="$BLUE"
-    LABEL="QC35II"
+    LABEL="$1"
 fi
 
 sketchybar --set $NAME icon.color=$COLOR label="$LABEL"
