@@ -9,7 +9,7 @@ I'm using [chezmoi](https://www.chezmoi.io/) to manage my personal configuration
 
 To use my config on a new machine, nothing more simple than :
 ```
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Blebesquefee
+sh -c "$(curl -fsLS get.chezmoi.io)" --init --apply Blebesquefee
 ```
 
 ## Dependencies
