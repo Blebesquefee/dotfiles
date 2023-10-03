@@ -9,7 +9,8 @@ bluetooth=(
     icon=$BLUETOOTH
     padding_left=0
     padding_right=0
-    script="$PLUGINS_DIR/bluetooth/scripts/bluetooth.sh $HEADSET"
+    update_script=5
+    script="$PLUGINS_DIR/bluetooth/scripts/bluetooth.sh"
     click_script="$PLUGINS_DIR/bluetooth/scripts/bluetooth_click.sh $HEADSET"
 )
 
